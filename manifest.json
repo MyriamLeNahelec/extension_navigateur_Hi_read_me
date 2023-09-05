@@ -17,10 +17,10 @@
   "commands": {
     "_execute_action": {
       "suggested_key": {
-        "windows": "Ctrl+Shift+T",
-        "mac": "Command+Shift+T",
-        "chromeos": "Ctrl+Shift+T",
-        "linux": "Ctrl+Shift+T"
+        "windows": "Ctrl+Shift+Y",
+        "mac": "Command+Shift+Y",
+        "chromeos": "Ctrl+Shift+Y",
+        "linux": "Ctrl+Shift+Y"
       }
     }
   },
