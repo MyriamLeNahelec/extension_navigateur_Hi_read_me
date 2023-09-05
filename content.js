@@ -1,3 +1,6 @@
+// Fonction reader asynchrone qui envoie en requête le contenu à encoder en audio sur Voice RSS
+// afin de le renvoyer en format MP3.
+
 function reader() {
     const options = {method: 'GET'};
 

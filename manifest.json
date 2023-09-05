@@ -33,10 +33,5 @@
 },
 "icons": {
 "128": "img/128.png"
-},
-
-"permissions": [
-"unlimitedStorage",
-"notifications"	
-]
+}
 }
