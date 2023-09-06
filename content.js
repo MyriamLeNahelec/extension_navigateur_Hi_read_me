@@ -8,3 +8,19 @@ function reader() {
 }
 
 reader()
+
+
+//function to highligth the text in the web page and return the highlighted text
+let highlightedText;
+
+document.addEventListener("mouseup", () => {
+highlightedText =window.getSelection().toString();
+console.log(highlightedText)
+});
+
+
+
+
+//function to send the text to the voice reader & receive the MP3 
+
+//function to send the MP3 file to the MP3 reader (via HTML)
