@@ -7,14 +7,14 @@ function reader() {
     .catch(err => console.error(err));
 }
 
-reader()
+//reader()
 
 
 //function to highligth the text in the web page and return the highlighted text
 let highlightedText;
 
-document.addEventListener("mouseup", () => {
-highlightedText =window.getSelection().toString().replace(" ", "%2C%20");
+document.addEventListener("mouseup", () => { //the user highlight a text and when mouse up, the function is launch
+highlightedText = window.getSelection().toString().replace(/ /g, "%2C%20"); //the highlighted text is put into string and replace the space by "%2C%20"
 console.log(highlightedText);
 });
 
