@@ -1,4 +1,8 @@
-let highlightedText;
+var header = document.createElement("pedro");
+header.textContent = "Ajout du texte qu'on veut entendre";
+document.body.appendChild(header);
+
+// let highlightedText;
 
 //Function reader => get under text the mp3 from highlightedText
 function reader() {
