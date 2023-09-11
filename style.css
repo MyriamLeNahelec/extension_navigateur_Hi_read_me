@@ -1,4 +1,55 @@
-pedro {
-    color: rgb(273, 72, 50);
-    background-color: rgb(225, 0, 0);
+@charset "UTF-8";
+body, html{
+    padding: 0;
+    margin: 0;
+    background-color: wheat;
 }
+
+.button_container {
+    width: 100%;
+    text-align: center;
+}
+
+#button_modal{
+    height: 50px;
+    width: 300px;
+    background-color: aquamarine;
+    color:black;
+    font-family: Helvetica;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 200px;
+}
+
+#modal {
+    height : 300px;
+    width: 30%;
+    background-color: beige;
+    font-family: Helvetica;
+    text-align: center;
+    color: black;
+    position: absolute;
+    top: -300px;
+    left: 35%;
+    transition: 0.5s;
+}
+
+#modal h1{
+    padding-top: 60px;
+    background-color: aquamarine;
+
+}
+
+    
+#close{
+        height: 50px;
+        width: 300px;
+        background-color: aquamarine;
+        color:black;
+        font-family: Helvetica;
+        font-size: 20px;
+        border: none;
+        cursor: pointer;
+ }
+    
