@@ -4,7 +4,7 @@ let highlightedText;
 function reader() {
     const options = {method: 'GET'};
     // Fetch the original image
-fetch(`https://api.voicerss.org/?key=4da2191a46b34962be23655d83ee1d71&hl=fr-fr&c=MP3&src=${highlightedText}`)
+fetch(`https://api.voicerss.org/?key=4da2191a46b34962be23655d83ee1d71&hl=fr-fr&c=MP3&src=${highlightedText}`, options)
 // Retrieve its body as ReadableStream
 .then((response) => {
   const reader = response.body.getReader();
