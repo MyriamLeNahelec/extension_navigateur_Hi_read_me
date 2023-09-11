@@ -1,10 +1,17 @@
+const cleVoixAPI = process.env.VOICE_API_KEY;
+
 let highlightedText;
+var header = document.createElement("pedro");
+header.textContent = "Ajout du texte qu'on veut entendre";
+document.body.appendChild(header);
+
+// let highlightedText;
 
 //Function reader => get under text the mp3 from highlightedText
 function reader() {
     const options = {method: 'GET'};
     // Fetch the original image
-fetch(`https://api.voicerss.org/?key=4da2191a46b34962be23655d83ee1d71&hl=fr-fr&c=MP3&src=${highlightedText}`, options)
+fetch(`https://api.voicerss.org/?key=`${cleVoixAPI}`&hl=fr-fr&c=MP3&src=${highlightedText}`, options)
 // Retrieve its body as ReadableStream
 .then((response) => {
   const reader = response.body.getReader();
