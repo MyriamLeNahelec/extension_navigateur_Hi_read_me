@@ -4,9 +4,49 @@ let highlightedText;
 document.addEventListener("mouseup", () => { //the user highlight a text and when mouse up, the function is launch
   highlightedText = window.getSelection().toString().replace(/ /g, "%2C%20"); //the highlighted text is put into string and replace the space by "%2C%20"
   console.log(highlightedText);
-  });
+  let baliseAudio = "<audio controls src=" + `"https://api.voicerss.org/?key=4da2191a46b34962be23655d83ee1d71&hl=fr-fr&c=MP3&src=${highlightedText}"` + "></audio>";
+  document.body.innerHTML += baliseAudio;
+  // function openModal(){
+  //   document.getElementById("modal").style.top= "0px"
+  // }
 
-  
+  // function closeModal() {
+  //     document.getElementById("modal").style.top= "-300px"
+  // }
+});
+
+//Fonction trouvée sur le site medium
+// chrome.runtime.onMessage.addListener((request) => {
+//   if(request.type === 'popup-modal'){
+//   showModal();
+//   }
+//   })
+//   const showModal = () => {
+//   const modal = document.createElement("dialog");
+//   modal.setAttribute(
+//   "style",`
+//   height:450px;
+//   border: none;
+//   top:150px;
+//   border-radius:20px;
+//   background-color:white;
+//   position: fixed; box-shadow: 0px 12px 48px rgba(29, 5, 64, 0.32);
+//   `
+//   );
+//   modal.innerHTML = `<iframe id="popup-content"; style="height:100%"></iframe>
+//   <div style="position:absolute; top:0px; left:5px;">
+//   <button style="padding: 8px 12px; font-size: 16px; border: none; border-radius: 20px;">x</button>
+//   </div>`;
+//   document.body.appendChild(modal);
+//   const dialog = document.querySelector("dialog");
+//   dialog.showModal();
+//   const iframe = document.getElementById("popup-content");
+//   iframe.src = chrome.extension.getURL("index.html");
+//   iframe.frameBorder = 0;
+//   dialog.querySelector("button").addEventListener("click", () => {
+//   dialog.close();
+//   });
+//   }
 
 
 // //Function reader => get under text the mp3 from highlightedText
