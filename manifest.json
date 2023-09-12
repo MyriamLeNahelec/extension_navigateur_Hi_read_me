@@ -28,10 +28,18 @@
 "action":{
 	"default_popup": "main.html",
 	"default_icon": {
-		"128": "img/128.png"
-		}
+		"128": "img/pyramid128.png",
+    "48": "img/pyramid48.png",
+    "32": "img/pyramid32.png",
+    "24": "img/pyramid24.png",
+    "16": "img/pyramid16.png"
+	}
 },
 "icons": {
-"128": "img/128.png"
+  "128": "img/128.png",
+  "48": "img/pyramid48.png",
+  "32": "img/pyramid32.png",
+  "24": "img/pyramid24.png",
+  "16": "img/pyramid16.png"
 }
 }
