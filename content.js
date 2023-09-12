@@ -4,16 +4,19 @@ let highlightedText;
 document.addEventListener("mouseup", () => { //the user highlight a text and when mouse up, the function is launch
   highlightedText = window.getSelection().toString().replace(/ /g, "%2C%20"); //the highlighted text is put into string and replace the space by "%2C%20"
   console.log(highlightedText);
+  
+
   let baliseAudio = "<audio controls src=" + `"https://api.voicerss.org/?key=4da2191a46b34962be23655d83ee1d71&hl=fr-fr&c=MP3&src=${highlightedText}"` + "></audio>";
   document.body.innerHTML += baliseAudio;
-  // function openModal(){
-  //   document.getElementById("modal").style.top= "0px"
-  // }
+ });
 
-  // function closeModal() {
-  //     document.getElementById("modal").style.top= "-300px"
-  // }
-});
+const modalContainer = document.querySelector(".modal-container");
+const modalTriggers = document.querySelectorAll(".modal-trigger");
+modalTriggers.forEach(trigger => trigger.addEventListener("click", toggleModal))
+function toggleModal(){
+  modalContainer.classList.toggle("active")
+}
+
 
 //Fonction trouvée sur le site medium
 // chrome.runtime.onMessage.addListener((request) => {
