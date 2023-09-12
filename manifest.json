@@ -35,6 +35,7 @@
     "16": "img/pyramid16.png"
 	}
 },
+
 "icons": {
   "128": "img/128.png",
   "48": "img/pyramid48.png",
@@ -42,4 +43,5 @@
   "24": "img/pyramid24.png",
   "16": "img/pyramid16.png"
 }
+
 }
