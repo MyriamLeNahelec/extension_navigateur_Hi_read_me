@@ -1,6 +1,7 @@
 {
 "manifest_version": 3,
 "name": "Hey Read Me !",
+"permissions": ["scripting", "activeTab", "tabs"],
 "version": "1.0",
 
 "description": "Text reader for websites",
@@ -37,7 +38,7 @@
 },
 
 "icons": {
-  "128": "img/128.png",
+  "128": "img/pyramid128.png",
   "48": "img/pyramid48.png",
   "32": "img/pyramid32.png",
   "24": "img/pyramid24.png",

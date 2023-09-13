@@ -1,6 +1,6 @@
 let highlightedText;
 
-//Function to highligth the text in the web page and return the highlighted text
+// Function to highligth the text in the web page and return the highlighted text
 document.addEventListener("mouseup", () => { //the user highlight a text and when mouse up, the function is launch
   highlightedText = window.getSelection().toString().replace(/ /g, "%2C%20"); //the highlighted text is put into string and replace the space by "%2C%20"
   console.log(highlightedText);
@@ -10,12 +10,37 @@ document.addEventListener("mouseup", () => { //the user highlight a text and whe
   document.body.innerHTML += baliseAudio;
  });
 
-const modalContainer = document.querySelector(".modal-container");
-const modalTriggers = document.querySelectorAll(".modal-trigger");
-modalTriggers.forEach(trigger => trigger.addEventListener("click", toggleModal))
-function toggleModal(){
-  modalContainer.classList.toggle("active")
-}
+// browser.action.onClicked.addListener(async (tab) => {
+//   try {
+//     await browser.scripting.insertCSS({
+//       target: {
+//         tabId: tab.id,
+//       },
+//       css: `body { border: 20px dotted pink; }`,
+//     });
+//   } catch (err) {
+//     console.error(`failed to insert CSS: ${err}`);
+//   }
+// });
+
+// const modal = `<div class="modal-container active">
+// <div class="overlay modal-trigger"></div>
+// <div class="modal" role="dialog" aria-labelledby="modalTitle" aria-describedby="dialogDesc">
+//   <button
+//   aria-label="close modal"
+//   class="close-modal modal-trigger">X</button>
+//   <h1 id="modalTitle">Voici du Contenu</h1>
+//   <p id="dialogDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nam exercitationem nihil veritatis sapiente quia.</p>
+// </div>
+// </div>`
+// document.body.innerHTML += modal;
+
+// const modalContainer = document.querySelector(".modal-container");
+// const modalTriggers = document.querySelectorAll(".modal-trigger");
+// modalTriggers.forEach(trigger => trigger.addEventListener("click", toggleModal))
+// function toggleModal(){
+//   modalContainer.classList.toggle("active")
+// }
 
 
 //Fonction trouvée sur le site medium

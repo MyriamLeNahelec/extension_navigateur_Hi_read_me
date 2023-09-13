@@ -2,6 +2,14 @@
 chrome.action.setBadgeText({ text:'ON' });
 chrome.action.setBadgeBackgroundColor({ color : 'lightgreen' });
 
+// chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+
+// chrome.scripting.insertCSS({
+//   target: { tabId: tabs[0], allFrames : true},
+//   files: ["style.css"]
+// });
+// });
+
 //Code trouvé sur le site Medium
 // chrome.action.onClicked.addListener(function (tab) { 
 // chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
