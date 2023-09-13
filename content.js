@@ -91,7 +91,7 @@ const html = `    <div class="modal-container">
   <button 
   aria-label="close modal"
   class="close-modal modal-trigger">X</button>
-  <h1 id="modalTitle">La lecture de ton texte</h1>
+  <h1 id="modalTitle">You can listen to your text</h1>
   <p class="lecteur">
   </p>
 </div>
